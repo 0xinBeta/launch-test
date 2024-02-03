@@ -17,16 +17,16 @@ const INITIALIZE = true;
 
 async function main(){
     console.log("let's name some tokens in 2024!");
-    const myKeypair = loadWalletKey("/Users/arefgholami/Desktop/NOAAA/codeWith0xin/spl-token/payer.json");
-    const mint = new web3.PublicKey("81Yxo7CWCzFHNzDK1eyRHVoUdqFwB8vcrorjZXBcyi4m");
+    const myKeypair = loadWalletKey("/Users/arefgholami/Desktop/NOAAA/codeWith0xin/spl-token/payer1.json");
+    const mint = new web3.PublicKey("4VL9DVHG6PapZUv3yE4YX42NzcwhqBK8vmDENhkXjS79");
 
     const umi = createUmi("https://mainnet.helius-rpc.com/?api-key=b407c362-c02b-46d7-b828-cd12cd7c89c0");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { // TODO change those values!
-        "name": "$SSUCC",
-        "symbol": "$SSUCC",
+        "name": "$EESH",
+        "symbol": "$EESH",
         uri: "https://raw.githubusercontent.com/0xinbeta/launch-test/main/metadata.json",
     }
     const onChainData = {
