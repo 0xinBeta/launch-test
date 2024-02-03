@@ -25,8 +25,8 @@ const mint = new web3.PublicKey("CtjwdeEVWnB5PAG7orknbFYAEyoYuRCH8aqNdQXoAhP4");
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { // TODO change those values!
-        "name": "$ZORK",
-        "symbol": "$ZORK",
+        "name": "$RELAX",
+        "symbol": "$RELAX",
         uri: "https://raw.githubusercontent.com/0xinbeta/launch-test/main/metadata.json",
     }
     const onChainData = {
