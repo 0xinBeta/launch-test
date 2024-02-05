@@ -17,8 +17,8 @@ const INITIALIZE = true;
 
 async function main(){
     console.log("let's name some tokens in 2024!");
-const myKeypair = loadWalletKey("/Users/arefgholami/Desktop/NOAAA/codeWith0xin/spl-token/payer14_ny.json");
-const mint = new web3.PublicKey("HNCpgU836V9GwTkmQnKxUZmgJiQQXzkaVz1uwU3E8Fzp");
+const myKeypair = loadWalletKey("/Users/arefgholami/Desktop/NOAAA/codeWith0xin/spl-token/payer2_ny.json");
+const mint = new web3.PublicKey("9rYuPXFQTavi45pMwNTwWTFTtW98p3aKz1RFeDZqx9PG");
 
     const umi = createUmi("https://mainnet.helius-rpc.com/?api-key=b407c362-c02b-46d7-b828-cd12cd7c89c0");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
