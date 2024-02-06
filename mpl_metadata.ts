@@ -17,16 +17,16 @@ const INITIALIZE = true;
 
 async function main(){
     console.log("let's name some tokens in 2024!");
-const myKeypair = loadWalletKey("/Users/arefgholami/Desktop/NOAAA/codeWith0xin/spl-token/payer2_ny.json");
-const mint = new web3.PublicKey("DXBJaRJSiZhZ6NEYmCbHJ3fwbcZy1tbuPbqmzofudjXF");
+const myKeypair = loadWalletKey("/root/scripts/spl-tokens/payer3.json");
+const mint = new web3.PublicKey("5o2vA7m7RpYbA4oTXBbg73noeraZis8N6NpakM7oF3YX");
 
     const umi = createUmi("http://89.187.179.160:8899");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { // TODO change those values!
-        "name": "DOGGO",
-        "symbol": "WOOF",
+        "name": "Dog",
+        "symbol": "Doge",
         uri: "https://raw.githubusercontent.com/0xinbeta/launch-test/main/metadata.json",
     }
     const onChainData = {
