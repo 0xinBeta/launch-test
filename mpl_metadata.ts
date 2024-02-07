@@ -18,15 +18,15 @@ const INITIALIZE = true;
 async function main(){
     console.log("let's name some tokens in 2024!");
 const myKeypair = loadWalletKey("/root/scripts/spl-tokens/payer10.json");
-const mint = new web3.PublicKey("D8LJXpKpeQVggJ2kvnKyyUpmbrZrrT7cHbmy7EzFw5GQ");
+const mint = new web3.PublicKey("GHVnjwnEcNgATZ4ewUNPXSxjZyZKiJGXuzGp3dJ9GEze");
 
     const umi = createUmi("http://89.187.179.160:8899");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { // TODO change those values!
-        "name": "Doggo",
-        "symbol": "Dogo",
+        "name": "DOG",
+        "symbol": "WOOF",
         uri: "https://raw.githubusercontent.com/0xinbeta/launch-test/main/metadata.json",
     }
     const onChainData = {
