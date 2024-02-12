@@ -18,15 +18,15 @@ const INITIALIZE = true;
 async function main(){
     console.log("let's name some tokens in 2024!");
 const myKeypair = loadWalletKey("/Users/arefgholami/Desktop/NOAAA/codeWith0xin/spl-token/misspiggypu.json");
-const mint = new web3.PublicKey("9n9KjJeh3fMdvfrTuBEVWdqCccXtFuBNG7M2oxeKWxKK");
+const mint = new web3.PublicKey("5pAfQygGqPteGuRwjqmR7WKFK6znSgd2dvzhQ9rQJqzt");
 
     const umi = createUmi("https://mainnet.helius-rpc.com/?api-key=b407c362-c02b-46d7-b828-cd12cd7c89c0");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { // TODO change those values!
-        "name": "Miss Piggy Pu",
-        "symbol": "$MPP",
+        "name": "Miss Piggy Money",
+        "symbol": "$MPM",
         uri: "https://raw.githubusercontent.com/0xinbeta/launch-test/main/metadata.json",
     }
     const onChainData = {
