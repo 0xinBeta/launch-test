@@ -40,7 +40,7 @@ const INITIALIZE = true;
 async function main() {
   console.log("let's name some tokens in 2024!");
   const myKeypair = loadWalletKey("/Users/arefgholami/Desktop/NOAAA/codeWith0xin/spl-token/cybertruckai.json");
-  const mint = new web3.PublicKey("9a9qyqkxwoFWjhrDtDazNjGTNm22bz6ZQTQP2mEMSMUG");
+  const mint = new web3.PublicKey("2ARa3jb8qSGozwe7uckkmpPoy4rNW2R7wNWeNVh5LTvn");
 
   const umi = createUmi("https://mainnet.helius-rpc.com/?api-key=b407c362-c02b-46d7-b828-cd12cd7c89c0 ");
   const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair));
