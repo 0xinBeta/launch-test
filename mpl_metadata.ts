@@ -39,16 +39,16 @@ const INITIALIZE = true;
 
 async function main() {
   console.log("let's name some tokens in 2024!");
-  const myKeypair = loadWalletKey("/Users/arefgholami/Desktop/NOAAA/codeWith0xin/spl-token/cybertruckai.json");
-  const mint = new web3.PublicKey("4UTWaEpWVEv8hwRSuwcacGNSy7zcnMwSayxyKZhhsiYe");
+  const myKeypair = loadWalletKey("/Users/arefgholami/Desktop/NOAAA/codeWith0xin/spl-token/Hujid2tCvqgi85M6BJ65aFbgyrM9MaJL7JJ5ePcSnxGv.json");
+  const mint = new web3.PublicKey("Huji1kRv15W8zFT3TgrWFNMCs6R55tKfmGNwCV1vP1To");
 
   const umi = createUmi("https://mainnet.helius-rpc.com/?api-key=b407c362-c02b-46d7-b828-cd12cd7c89c0 ");
   const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair));
   umi.use(signerIdentity(signer, true));
 
   const ourMetadata = {
-    "name": "CyberTruck AI",
-    "symbol": "$CTAI",
+    "name": "WAT - Matt Furie's Pet Rate",
+    "symbol": "$WAT",
     uri: "https://raw.githubusercontent.com/0xinbeta/launch-test/main/metadata.json",
   };
   const onChainData = {
